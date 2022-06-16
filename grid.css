@@ -1,0 +1,58 @@
+:root {
+    --blue: rgb(29, 158, 190);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(238, 233, 184);
+    font-family: 'Lexend Deca', Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    margin-top: 3em;
+    text-align: center;
+}
+header h1 a{
+    text-decoration: none;
+}
+header a:hover {
+    color: rgb(6, 158, 228)
+}
+#cont-box {
+    width: 50%;
+    margin: 3em auto 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 1em;
+}
+.box {
+    padding: 3em;
+}
+.box-1 {
+    background-color: rgb(216, 60, 3);
+    grid-column: 1 / 8;
+    grid-row: 1 / 5;
+}
+.box-2 {
+    background-color: rgb(255, 148, 27);
+    grid-column: 8 / 13;
+    grid-row: 1 / 5;
+}
+.box-3 {
+    background-color: rgb(4, 133, 4);
+    grid-column: 1 / 7;
+    grid-row: 5 / 10;
+}
+.box-4 {
+    background-color: var(--blue);
+    grid-column: 7 / 13;
+    grid-row: 5 / 7;
+}
+.box-5 {
+    background-color: var(--blue);
+    grid-column: 7 / 13;
+    grid-row: 7 / 10;
+}

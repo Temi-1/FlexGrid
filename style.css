@@ -1,0 +1,111 @@
+
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+    --gray: hsl(0, 0%, 95%);
+}* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--gray);
+    font-family: 'Lexend Deca', Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    margin-top: 3em;
+    text-align: center;
+}
+header h1 a{
+    text-decoration: none;
+}
+header a:hover {
+    color: rgb(6, 158, 228);
+}
+.card-cont {
+    width: 80%;
+    margin: 1em auto;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7.5px;
+    overflow: hidden;
+}
+.single-cont {
+    padding: 2em;
+}
+.sedan {
+    background-color: var(--orange);
+    width: 100%;
+}
+.suv {
+    background-color: var(--cyan);
+    width: 100%;
+}
+.luxury {
+    background-color:var(--dark-cyan);
+    width: 100%;
+}
+.single-cont h2 {
+    color: var(--gray);
+    padding-top: .75em;
+    padding-bottom: .75em;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+}
+.single-cont p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    padding-bottom: 5em;
+}
+.btn { 
+    border: none;
+    padding: 1em 2em;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2em;
+    border-radius: 2em;
+}
+.btn:hover{
+    border: 1px solid var(--gray);
+}
+.sedan .btn {
+    color: var(--orange);
+}
+.sedan .btn:hover {
+    color: var(--gray);
+    background-color: var(--orange);
+}
+.suv .btn {
+    color: var(--cyan);
+}
+.suv .btn:hover {
+    color: var(--gray);
+    background-color: var(--cyan);
+}
+.luxury .btn {
+    color: var(--dark-cyan);
+}
+.luxury .btn:hover {
+    color: var(--gray);
+    background-color: var(--dark-cyan);
+}
+@media screen and (max-width: 600px) {
+    header {
+        margin-top: 1em;
+    }
+    .card-cont {
+        margin: 6em auto;
+        max-width: 60%;
+        height: 100%;
+        flex-direction: column;
+        overflow: visible;
+    }
+    .btn {
+        position: relative;
+        margin-bottom: 1em;
+    }
+}
